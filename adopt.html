@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="icon" href="image-removebg-preview.png">
+    <link rel="stylesheet" href="adopt.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-text">Pawsitive🐾</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+    </nav>
+    <div class="container">
+        <div class="form-container">
+            <form class="adoption-form" action="mailto:alainbe012@gmail.com" method="POST" enctype="text/plain">
+                <h1>Adoption Application</h1>
+                <h2>Fill the form and we"ll get back to you !</h2>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="pets">Do you have any other pets?</label>
+                <textarea id="pets" name="pets" rows="4"></textarea>
+
+                <label for="reason">Why do you want to adopt a pet?</label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+
+                <label for="pet-type">What type of pet are you interested in?</label>
+                <select id="pet-type" name="pet-type" required>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+        <div class="notice">
+            <h2>You must be 18 to apply</h2>
+            <p>Adopting a pet is a lifelong commitment. Before you apply, please consider the time, effort, and
+                resources
+                required to care for a pet. Ensure you have the necessary space, finances, and dedication to provide a
+                loving home for your new companion.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
